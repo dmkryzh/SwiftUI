@@ -1,2 +1,2 @@
-# SwiftUI
+# SwiftUIFramework
 SwiftUI examples
