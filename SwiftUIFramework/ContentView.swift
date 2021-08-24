@@ -24,7 +24,7 @@ struct Fields: View {
                 TextField ("Login", text: $loginText)
                     .padding(.horizontal, 10)
                 VStack{
-                    Color.gray.frame(height:CGFloat(1.5) / UIScreen.main.scale)
+                    Color.gray.frame(height:CGFloat(4) / UIScreen.main.scale)
                         .padding(.vertical, 12)
                 }
                 
@@ -36,6 +36,19 @@ struct Fields: View {
             .background(Color(.systemGray6)).cornerRadius(10)
             .font(.system(size: 16, weight: .regular, design: .default))
             .padding(.horizontal, 10)
+            
+            Button(action: {}, label: {
+                Text("Log in")
+                    .foregroundColor(.white)
+                    .padding(.horizontal, 10)
+                    .frame(width: UIScreen.main.bounds.width - 20, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+
+            })
+            .background(Color(.systemBlue))
+            .frame(width: UIScreen.main.bounds.width - 20, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            .cornerRadius(10)
+            .padding(.vertical, 10)
+           
         }
     }
 }
